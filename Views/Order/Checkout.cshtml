@@ -1,0 +1,48 @@
+﻿@model Order
+
+<h2>Confirmation</h2>
+<h4>Wprowadź dane do wysyłki</h4>
+
+<div asp-validation-summary="All" class="text-danger"/>
+
+<form asp-action="Checkout" method="post">
+    <h3>Wysyłka na dane:</h3>
+    <div class="form-group">
+        <label>Imię i nazwisko:</label>
+        <input asp-formaction="Name" class="form-control"/>
+    </div>
+    <h3>Adres wysyłki</h3>
+    <div class="form-group">
+        <label>Adress</label>
+        <input asp-for="Line1" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Adress</label>
+        <input asp-for="Line2" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Adress</label>
+        <input asp-for="Line3" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>City:</label>
+        <input asp-for="City" class="form-control" />
+        <div class="form-group">
+            <label>Zip Code:</label>
+            <input asp-for="Zip" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Country:</label>
+            <input asp-for="Country" class="form-control" value="Poland"/>
+        </div>
+
+        <h3>Special options:</h3>
+        <div class="checkbox">
+            <label><input asp-for="GiftWrap" />Gift wrap?</label>
+            
+        </div>
+        <div class="text-center">
+            <input class="btn btn-primary" type="submit" value="Place Order"/>
+        </div>
+    </div>
+</form>
