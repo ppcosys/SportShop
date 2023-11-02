@@ -1,27 +1,27 @@
 ﻿@model Order
 
 <h2>Confirmation</h2>
-<h4>Wprowadź dane do wysyłki</h4>
+<h4>Enter your shipping details</h4>
 
-<div asp-validation-summary="All" class="text-danger"/>
+<div asp-validation-summary="All" class="text-danger"></div>
 
 <form asp-action="Checkout" method="post">
-    <h3>Wysyłka na dane:</h3>
+    <h3>Shipping data:</h3>
     <div class="form-group">
-        <label>Imię i nazwisko:</label>
-        <input asp-formaction="Name" class="form-control"/>
+        <label>Name:</label>
+        <input asp-for="Name" class="form-control"/>
     </div>
-    <h3>Adres wysyłki</h3>
+    <h3>Adress</h3>
     <div class="form-group">
-        <label>Adress</label>
+        <label>Adress Line 1</label>
         <input asp-for="Line1" class="form-control" />
     </div>
     <div class="form-group">
-        <label>Adress</label>
+        <label>Adress Line 2</label>
         <input asp-for="Line2" class="form-control" />
     </div>
     <div class="form-group">
-        <label>Adress</label>
+        <label>Adress Line 3</label>
         <input asp-for="Line3" class="form-control" />
     </div>
     <div class="form-group">
@@ -44,5 +44,10 @@
         <div class="text-center">
             <input class="btn btn-primary" type="submit" value="Place Order"/>
         </div>
+
+        <div class="text-center">
+            <input class="btn btn-primary" value="Back to Shop" />
+        </div>
+
     </div>
 </form>

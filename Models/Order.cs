@@ -28,7 +28,7 @@ namespace Shop.Models
 
         public string? Zip { get; set;}
 
-        public string? Country { get; set; } = "Polska";
+        public string? Country { get; set; } = "Poland";
 
         public bool GiftWrap { get; set;}
 

@@ -27,9 +27,9 @@ namespace Shop.Controllers
                 order.Lines = cart.Lines.ToArray();
                 repository.SaveOrder(order);
                 cart.Clear();
-                return RedirectToPage("/Complited", new {orderId = order.OrderID});
+                return RedirectToPage("/Completed", new {orderId = order.OrderID});
             }
-            else { return View(); }
+            else { return View(); /*return Content("Model Not Valid");*/  }
         }
     }
 }
