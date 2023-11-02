@@ -3,16 +3,9 @@
 @model ProductListViewModel
 
 
-<h2>Witam w Sklepie</h2>
+<h2>Welcome to the Shop</h2>
 
-<h3>Lista produktów:</h3>
-@*@foreach(var p in Model ?? Enumerable.Empty<Product>()){
-    <div>
-        <h4>@p.Name</h4>
-        <p>@p.Description</p>
-        <h4>Cena: @p.Price.ToString("c")</h4>
-    </div>
-}*@
+<h3>List of products:</h3>
 
 <div page-model="@Model?.PagingInfo" page-action="Index"
      page-class-enabled="true"
@@ -22,22 +15,14 @@
      page-class-selected="btn-primary" class="btn-group pull-right m-l">
 </div>
 
-@foreach (var p in Model?.Products ?? Enumerable.Empty<Product>())
-{
-    @*<div class="card card-outline-primary m-l p-l">
-        <div class="bg-faded p-l">
-        <h4>@p.Name
-        <span class="badge rounded-pill bg-primary text-white" style="float:right">
-            <small>Cena: @p.Price.ToString("c")</small>
-        </span>
-        </h4>
-            
-        </div>
-        <div class="cart-text p-l">@p.Description</div>
-    </div>*@
 
-    <partial name="ProductSummary" model="p"/>
-}
+<div class="d-grid gap-2 mt-3 mb-3">
+    @foreach (var p in Model?.Products ?? Enumerable.Empty<Product>())
+    {
+        <partial name="ProductSummary" model="p" />
+    }
+</div>
+
 
 <div page-model="@Model?.PagingInfo" page-action="Index" 
     page-class-enabled="true" 

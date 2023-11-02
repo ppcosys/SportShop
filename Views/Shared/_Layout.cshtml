@@ -7,28 +7,23 @@
         <title>Shop</title>
     </head>
     <body>
-
     <div class="container justify-content-center">
             <div class="row bg-dark text-white p-2">
-                
                 <div class="row">
                     <div class="col navbar-brand">Sport shop</div>
                     <div class="col-6 navbar-text text-end">
                         <vc:cart-summary />
                     </div>
                 </div>
-                <span class="navbar-brand ml-2">Sport shop</span>
             </div>
             <div class="row m-l p-l">
-                <div class="col-sm-2" id="categories">
+                <div class="col-sm-2 mt-2" id="categories">
                     <vc:navigation-menu />
                 </div>
-                <div class="col-sm-10">
+                <div class="col-sm-10 mt-2">
                     @RenderBody()
                 </div>
             </div>
         </div>
-
-       
     </body>
 </html>
