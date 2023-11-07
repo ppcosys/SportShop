@@ -7,10 +7,14 @@
 </head>
 <body>
     <div class="bg-dark text-white p-2">
-        <span class="navbar-brand ml-2">Sport shop</span>
+        <div class="col navbar-brand text-white ms-3 text-md-start">
+            <a asp-page="/Home"
+               class="text-decoration-none link-light">
+                Sklep Sportowy
+            </a>
+        </div>
     </div>
-
-    <div class="m-l p-l">
+    <div class="row m-3 p-1">
         @RenderBody()
     </div>
 </body>
