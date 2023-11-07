@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+/s+i+GxgwJUh9rSeQ10vdfHgSHuoiyO8qR3Uw1f9Gc=",
+  "Hash": "5FHW+/ZrYR5XzJj+lDBshjy4jGrcp0pNf0UZRS9Gyx0=",
   "Source": "Shop",
   "BasePath": "_content/Shop",
   "Mode": "Default",
@@ -2259,6 +2259,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\vendor\\_rfs.scss"
+    },
+    {
+      "Identity": "E:\\Apps\\Proj\\NET Core\\Shop\\Shop\\wwwroot\\lib\\custom_css\\custom_style.css",
+      "SourceId": "Shop",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Apps\\Proj\\NET Core\\Shop\\Shop\\wwwroot\\",
+      "BasePath": "_content/Shop",
+      "RelativePath": "lib/custom_css/custom_style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\custom_css\\custom_style.css"
     },
     {
       "Identity": "E:\\Apps\\Proj\\NET Core\\Shop\\Shop\\wwwroot\\lib\\font-awesome\\css\\all.css",

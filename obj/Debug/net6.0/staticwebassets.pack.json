@@ -529,6 +529,10 @@
       "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\vendor\\_rfs.scss"
     },
     {
+      "Id": "E:\\Apps\\Proj\\NET Core\\Shop\\Shop\\wwwroot\\lib\\custom_css\\custom_style.css",
+      "PackagePath": "staticwebassets\\lib\\custom_css\\custom_style.css"
+    },
+    {
       "Id": "E:\\Apps\\Proj\\NET Core\\Shop\\Shop\\wwwroot\\lib\\font-awesome\\css\\all.css",
       "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\all.css"
     },
