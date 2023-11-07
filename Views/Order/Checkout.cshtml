@@ -1,53 +1,49 @@
 ﻿@model Order
 
-<h2>Confirmation</h2>
-<h4>Enter your shipping details</h4>
+<h2>Potwierdzenie zamówienia</h2>
+<h4>Wprowadź dane do wysyłki</h4>
 
-<div asp-validation-summary="All" class="text-danger"></div>
+<div class="container-fluid">
+    <div asp-validation-summary="All" class="text-danger"></div>
 
-<form asp-action="Checkout" method="post">
-    <h3>Shipping data:</h3>
-    <div class="form-group">
-        <label>Name:</label>
-        <input asp-for="Name" class="form-control"/>
-    </div>
-    <h3>Adress</h3>
-    <div class="form-group">
-        <label>Adress Line 1</label>
-        <input asp-for="Line1" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label>Adress Line 2</label>
-        <input asp-for="Line2" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label>Adress Line 3</label>
-        <input asp-for="Line3" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label>City:</label>
-        <input asp-for="City" class="form-control" />
+    <form asp-action="Checkout" method="post">
+        <h3>Dane zamawiającego:</h3>
         <div class="form-group">
-            <label>Zip Code:</label>
-            <input asp-for="Zip" class="form-control" />
+            <label>Imię i nazwisko:</label>
+            <input asp-for="Name" class="form-control" />
+        </div>
+        <h3>Adres</h3>
+        <div class="form-group">
+            <label>Ulica i numer domu:</label>
+            <input asp-for="Line1" class="form-control" />
         </div>
         <div class="form-group">
-            <label>Country:</label>
-            <input asp-for="Country" class="form-control" value="Poland"/>
-        </div>
+            <label>Miejscowość:</label>
+            <input asp-for="City" class="form-control" />
+            <div class="form-group">
+                <label>Kod pocztowy:</label>
+                <input asp-for="Zip" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Kraj:</label>
+                <input asp-for="Country" class="form-control" value="Polska" />
+            </div>
+            <h3>Opcje:</h3>
+            <div class="checkbox p-1">
+                <label><input asp-for="GiftWrap" /> Zapakuj jako prezent?</label>
+            </div>            
+            <div class="text-center mb-2">
+                <input class="btn btn-primary" type="submit" value="Złóż zamówienie" />
+            </div>
+            <div class="text-center">
+                <a class="btn btn-secondary" asp-action="Index" asp-controller="Home">
+                    Powrót
+                </a>
+            </div>
 
-        <h3>Special options:</h3>
-        <div class="checkbox">
-            <label><input asp-for="GiftWrap" />Gift wrap?</label>
-            
         </div>
-        <div class="text-center">
-            <input class="btn btn-primary" type="submit" value="Place Order"/>
-        </div>
+    </form>
+</div>
 
-        <div class="text-center">
-            <input class="btn btn-primary" value="Back to Shop" />
-        </div>
 
-    </div>
-</form>
+
