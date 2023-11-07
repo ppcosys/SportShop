@@ -8,16 +8,21 @@
         <title>Shop</title>
     </head>
     <body>
-        <div class="container justify-content-center">
-            <div class="row bg-dark text-white p-2">
+        <div class="">
+        <div class="container-fluid bg-dark text-white p-2">
                 <div class="row">
-                    <div class="col navbar-brand">Sport shop</div>
-                    <div class="col-6 navbar-text text-end">
+                    <div class="col navbar-brand text-white ms-3 text-md-start">
+                        <a asp-page="/Home"
+                            class="text-decoration-none link-light">
+                                Sklep Sportowy
+                        </a>
+                    </div>
+                    <div class="col-6 navbar-text text-end me-3">
                         <vc:cart-summary />
                     </div>
                 </div>
             </div>
-            <div class="row m-l p-l">
+            <div class="row m-1 p-1">
                 <div class="col-sm-2" id="categories">
                     <vc:navigation-menu />
                 </div>
