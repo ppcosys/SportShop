@@ -15,14 +15,14 @@ namespace Shop.Models
             if (!context.Products.Any())
             {
                 context.Products.AddRange(
-                    new Product { Name="Kajak", Description="Rodzaj obiektu do pływania", Category="Woda", Price=1300 },
-                    new Product { Name="Łódź", Description="Rodzaj obiektu do pływania", Category="Woda", Price=67000 },
-                    new Product { Name="Wiosła", Description="Rodzaj obiektu do pływania", Category="Woda", Price=300 },
-                    new Product { Name="Szybowiec", Description="Rodzaj obiektu do latania", Category="Powietrze", Price=21300 },
-                    new Product { Name="Spadochron", Description="Rodzaj obiektu do latania", Category="Powietrze", Price=1300 },
-                    new Product { Name="Motocykl", Description="Rodzaj obiektu do jeżdżenia", Category="Ziemia", Price=22300 },
-                    new Product { Name="Rower górski", Description="Rodzaj obiektu do jeżdżenia", Category="Ziemia", Price=7300 },
-                    new Product { Name="Rwoer szosowy", Description="Rodzaj obiektu do jeżdżenia", Category="Ziemia", Price=9200 }
+                    new Product { Name="Buty do biegania", Description="Buty trenigowe do biegania", Category="Bieganie", Price=300 },
+                    new Product { Name="Koszulka", Description="Koszulka do biegania", Category="Bieganie", Price=67000 },
+                    new Product { Name="Spodenki", Description="Spodenki do biegania", Category="Bieganie", Price=300 },
+                    new Product { Name="Narty", Description="Narty zjazdowe", Category="Narciarstwo", Price=840 },
+                    new Product { Name="Kije narciarskie", Description= "Kije do narciarstwa zjazdowego", Category="Narciarstwo", Price=150 },
+                    new Product { Name="Rower szosowy", Description= "Rower do jazdy na twardej drodze", Category="Kolarstwo", Price=8300 },
+                    new Product { Name="Rower górski", Description="Rower przeznaczony do jazdy w terenie", Category="Kolarstwo", Price=6200 },
+                    new Product { Name="Lampka rowerowa", Description="Lampka rowerowa oświetlająca drogę", Category="Kolarstwo", Price=120 }
                     );
             }
             context.SaveChanges();
