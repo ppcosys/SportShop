@@ -1,7 +1,7 @@
 # SportShop
 Sample project of online Store. 
 Project assumptions: online store website enabling the purchase of offered products and saving them in an individual basket.
-Link to live demo: [https://shop-sample.azurewebsites.net](https://shop-sample.azurewebsites.net)
+Hosted on Microsoft Azure. Link to [live demo](https://shop-sample.azurewebsites.net) of the project.
 
 Technologies used:
 - ASP.NET Core MVC,
